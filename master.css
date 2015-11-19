@@ -1,0 +1,197 @@
+@import https: //fonts.googleapis.com/css?family=Roboto:400,500,300;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300
+}
+body {
+    background-color: #F5F5F5;
+    min-width: 400px
+}
+a {
+    color: #4285f4
+}
+a:visited {
+    color: #4285f4
+}
+main {
+    background-color: #4285f4;
+    height: 600px;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: calc((100vw - 850px)/2)
+}
+main div {
+    padding: 0 15px 40px
+}
+.contentwrapper {
+    width: 650px;
+    float: left;
+    padding-bottom: 150px
+}
+.contentwrapper>h1 {
+    margin: 20px;
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+    display: block
+}
+.contentwrapper div {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-radius: 2px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, .4);
+    padding: 32px
+}
+.contentwrapper div h1 {
+    color: #212121
+}
+.contentwrapper div h2 {
+    color: #212121;
+    margin: 20px 0
+}
+.contentwrapper div p {
+    margin: 15px 0
+}
+.contentwrapper div img {
+    width: 100%;
+    margin: 15px 0
+}
+.contentwrapper div form {
+    width: 100%;
+    margin: 15px 0
+}
+.contentwrapper div input[type="text"], input[type="button"], textarea {
+    width: 100%;
+    max-width: 100%;
+    margin: 3px 0;
+    padding: 4px 5px;
+    border-radius: 2px;
+    border: 2px solid #E0E0E0;
+    background-color: #FAFAFA;
+    font-size: 18px;
+    color: #BDBDBD
+}
+.box {
+    padding: 2px 16px 16px!important;
+    margin: 20px 10px;
+    float: left;
+    background-color: #fdfdfd!important;
+    width: calc(50% - 20px)!important;
+    font-size: .9em
+}
+.boxleft {
+    transform: translateX(-8px)
+}
+.boxright {
+    transform: translateX(8px)
+}
+.highlight {
+    color: #4285f4
+}
+.navwrapper {
+    width: 200px;
+    height: 100%;
+    float: left;
+    padding-left: 20px
+}
+.navwrapper ul {
+    margin-top: 78px
+}
+.navwrapper ul li {
+    list-style: none;
+    border-radius: 2px
+}
+.navwrapper ul li[class="current"] {
+    font-weight: 300;
+    border-left: 3px solid #fff;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px
+}
+.navwrapper ul li a {
+    color: #e3edfe;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px;
+    display: block;
+    width: 100%
+}
+.navwrapper ul li[class="current"] a {
+    color: #fff;
+    font-weight: 400
+}
+.navwrapper ul li:hover {
+    background-color: #3b78e7
+}
+.mobilenav {
+    display: none
+}
+@media only all and (max-width: 900px) {
+    main {
+        padding: 0
+    }
+    .contentwrapper {
+        float: none;
+        width: calc(90%);
+        margin: 0 auto;
+        padding: 1px 0 150px
+    }
+    .box {
+        padding: 0!important;
+        margin: 0;
+        float: none;
+        background-color: #fff!important;
+        width: 100%!important;
+        font-size: 1em;
+        transform: none;
+        box-shadow: none!important
+    }
+    .navwrapper {
+        display: none
+    }
+    .navwrapper.mobilevisible {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4)
+    }
+    .navwrapper ul {
+        margin: 0
+    }
+    .navwrapper ul li a {
+        color: #000!important
+    }
+    .navwrapper ul li:hover {
+        background-color: rgba(255, 255, 255, 0.5)!important
+    }
+    .mobilenav {
+        height: 100%;
+        width: 80px;
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        z-index: 5
+    }
+    .navwrapper.mobilevisible .mobilenav {
+        color: #000!important
+    }
+    .navwrapper.mobilevisible li.current {
+        margin: 4px 0;
+        padding: 7px;
+        background-color: #F5F5F5;
+        border-radius: 2px
+    }
+    .navwrapper.mobilevisible ul li:hover {
+        background-color: ##F5F5F5
+    }
+}
